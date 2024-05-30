@@ -12,7 +12,7 @@ const Dice = () => {
     const handleDiceClick = () => {
         audio.play()
         setAllowedToRoll(false)
-         let num = Math.floor((Math.random() * 1) + 1);
+         let num = Math.floor((Math.random() * 6) + 1);
         changeDiceNumber(num);
         setRandomNum(num)
     }
