@@ -1,0 +1,27 @@
+.movements_box_container{
+    display: grid;
+    width: 30%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.movements_box_container .cell{
+    border: .5px solid grey;
+    
+}
+.cell_content_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.star_container{
+    position: absolute;
+    z-index: -1;
+}
+.arrow_container{
+    position: absolute;
+    z-index: -1;
+}

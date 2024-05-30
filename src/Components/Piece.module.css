@@ -1,0 +1,9 @@
+.animate{
+    animation: animate 2s infinite;
+    border: 2px dotted Lime;
+}
+@keyframes animate {
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,10 @@
+.game_container{
+    width: 40%;
+    margin: auto;
+}
+
+@media only screen and (max-width:400px) {
+    .game_container{
+        width: 97%;
+    }
+}

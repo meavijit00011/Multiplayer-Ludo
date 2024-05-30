@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import Game from "./Components/Game";
+import ContextProvider, { GameContext } from "./Context/GameContext";
+import Dice from "./Components/Dice";
+import Timer from "./Components/Timer";
+import Modal from "./Components/Modal";
+import Home from "./Components/Home";
+import { AppContext } from "./Context/AppContext";
+import Back from "./Components/Back";
 
 function App() {
+
+  const appContext = useContext(AppContext);
+  console.log(appContext)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!appContext.isGameActive && <Home></Home>}
+      {appContext.isGameActive && <ContextProvider>
+        <Game></Game>
+      </ContextProvider>}
+
     </div>
   );
 }

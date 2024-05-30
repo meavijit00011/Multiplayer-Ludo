@@ -1,0 +1,64 @@
+.modal_container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    z-index: 100000;
+    left: 0;
+}
+h3{
+    text-align: center;
+    color: orange;
+}
+.content{
+    padding: 20px;
+    background-color: aliceblue;
+    height: fit-content;
+    width: 300px;
+    position: relative;
+}
+.content span{
+    all: unset;
+    font-weight: 500;
+}
+.content div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+ .modal_container button{
+    all: unset;
+}
+.actions{
+display: flex;
+justify-content: center;
+}
+.actions div{
+    cursor: pointer;
+    z-index: 1000;
+}
+.gif_container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.quit{
+    display: flex;
+    flex-direction: column;
+}
+
+.quit_btns_container button{
+    padding: 10px 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.quit_btns_container button:nth-child(2){
+background-color: orange;
+color: white;
+}

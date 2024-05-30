@@ -1,0 +1,86 @@
+.player_box_container{
+    width: 35%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.piece_container{
+    height: 60%;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+span{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-weight: 500;
+}
+.piece_container .row_1,.row_2{
+    display: flex;
+    justify-content: space-around;
+}
+.piece_background{
+    height: 29px;
+    width: 29px;
+    background-color: rgb(241, 225, 225);
+    border-radius: 50%;
+}
+:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#fb0094,
+		#0000ff,
+		#00ff00,
+		#ffff00,
+		#ff0000,
+		#fb0094,
+		#0000ff,
+		#00ff00,
+		#ffff00,
+		#ff0000
+	);
+}
+.shadow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+}
+.shadow:before,
+.shadow:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+	filter: blur(7px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 150% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+

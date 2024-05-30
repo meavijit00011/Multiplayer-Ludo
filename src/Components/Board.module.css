@@ -1,0 +1,31 @@
+.board_container {
+    height: 700px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px;
+}
+@media (max-width:400px) {
+    .board_container{
+        height: 400px;
+        font-size: 80%;
+    }
+}
+
+.row_2{
+    height: 30%;
+    display: flex;
+}
+.row_2 .movements_box_container{
+    width: 35%;
+}
+.row_1,.row_3{
+    height: 35%;
+}
+.row_1{
+    display: flex;
+    justify-content: space-between;
+}
+.row_3{
+    display: flex;
+}
