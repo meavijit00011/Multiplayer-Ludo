@@ -5,10 +5,10 @@ import sound from '../sound2.mp3';
 import { AppContext } from "./AppContext";
 
 const PIECES_CURR_POSTION = [
-    [1,1,1,1],
-    ['b11', 1, 1, 'b11'],
-    [1, 1, 1, 1],
-    [0, 'd6',1,'d6']
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0]
 ]
 
 const PIECES_THAT_CAN_MOVE = [
